@@ -9,7 +9,7 @@ function Column() {
   return (
     <div className="bg-zinc-800 rounded-xl p-4 min-h-[500px]">
       <h2 className="text-xl font-bold text-white mb-4 flex justify-between">
-        {title}
+        {tasks.title}
         <span className="text-sm bg-zinc-700 px-2 py-1 rounded-full">
           {filterdTasks.length}
         </span>

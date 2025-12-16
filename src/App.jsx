@@ -1,16 +1,13 @@
-import React from "react";
-import { useTasks } from "./context/TaskContext";
+import Board from "./components/Board";
 
-function App() {
-  const { tasks } = useTasks();
-  console.log(tasks);
+export default function App() {
   return (
-    <div>
-      <h1>Kanban-Board</h1>
-      {tasks.map((task) => (
-        <p key={task.id}>{task.title}</p>
-      ))}
+    <div className="min-h-screen bg-linear-to-b from-zinc-900 to-zinc-800 p-8">
+      <h1 className="text-5xl font-bold text-center text-white mb-10">
+        Kanban Board
+      </h1>
+
+      <Board />
     </div>
   );
 }
-export default App;
