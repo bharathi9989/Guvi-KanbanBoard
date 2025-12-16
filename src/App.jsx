@@ -1,8 +1,16 @@
 import React from "react";
+import { useTasks } from "./context/TaskContext";
 
 function App() {
-  return (<div>
-    <h1 className="text-red-600 bg-amber-500 text-center font-bold">Kanban-Board</h1>
-  </div>)
+  const { tasks } = useTasks();
+  console.log(tasks);
+  return (
+    <div>
+      <h1>Kanban-Board</h1>
+      {tasks.map((task) => (
+        <p key={task.id}>{task.title}</p>
+      ))}
+    </div>
+  );
 }
 export default App;
