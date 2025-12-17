@@ -11,10 +11,8 @@ const COLUMNS = [
 export default function Board() {
   const { moveTask } = useTasks();
 
-  const handleDragEnd = (event) => {
-    const { active, over } = event;
+  const handleDragEnd = ({ active, over }) => {
     if (!over) return;
-
     moveTask(active.id, over.id);
   };
 

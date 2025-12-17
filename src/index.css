@@ -1,1 +1,49 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+/* ===== SMOKE BACKGROUND ===== */
+
+
+/* 🔥 CUSTOM STYLES SHOULD BE IN LAYER */
+
+  .smoke {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.25;
+    animation: floatSmoke 30s infinite linear;
+  }
+
+  .smoke-1 {
+    background: #3b82f6;
+    top: -20%;
+    left: -10%;
+  }
+
+  .smoke-2 {
+    background: #22c55e;
+    bottom: -20%;
+    right: -10%;
+    animation-duration: 40s;
+  }
+
+  .smoke-3 {
+    background: #f97316;
+    top: 30%;
+    right: 20%;
+    animation-duration: 50s;
+  }
+
+
+@keyframes floatSmoke {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(80px, -100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

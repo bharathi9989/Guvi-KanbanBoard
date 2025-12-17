@@ -31,7 +31,7 @@ function TaskModal() {
   };
 
   return (
-    <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-zinc-300 flex items-center justify-center z-50">
       <div className="bg-zinc-800 w-full max-w-lg rounded-xl p-6">
         <h2 className="text-xl text-white font-bold mb-4">Edit Task</h2>
 

@@ -31,7 +31,7 @@ function TaskForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-zinc-800 p-4 rounded-xl mb-8 flex flex-col md:flex-row gap-4"
+      className="bg-zinc-400 p-4 rounded-xl mb-8 flex flex-col md:flex-row gap-4"
     >
       <input
         value={title}

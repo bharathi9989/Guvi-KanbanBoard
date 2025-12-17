@@ -9,10 +9,10 @@ function Column({ status, title }) {
   const filteredTasks = tasks.filter((task) => task.status === status);
 
   return (
-    <div ref={setNodeRef} className="bg-zinc-800 rounded-xl p-4 min-h-[500px]">
+    <div ref={setNodeRef} className="bg-gray-400  rounded-xl p-4 min-h-[500px]">
       <h2 className="text-xl font-bold text-white mb-4 flex justify-between">
         {title}
-        <span className="text-sm bg-zinc-700 px-2 py-1 rounded-full">
+        <span className="text-sm bg-green-700 px-2 py-1 rounded-full">
           {filteredTasks.length}
         </span>
       </h2>
