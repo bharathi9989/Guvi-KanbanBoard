@@ -12,6 +12,7 @@ export function TaskProvider({ children }) {
     const stored = localStorage.getItem("kanban-tasks");
     return stored ? JSON.parse(stored) : initialTasks;
   });
+  const [selectedTask, setSelectedTask] = useState(null);
 
   // Persist to localStorage
 
@@ -41,7 +42,7 @@ export function TaskProvider({ children }) {
 
   return (
     <TaskContext.Provider
-      value={{ tasks, addTask, updateTask, deleteTask, moveTask }}
+      value={{ tasks, addTask, updateTask, deleteTask, moveTask,selectedTask,setSelectedTask }}
     >
       {children}
     </TaskContext.Provider>
