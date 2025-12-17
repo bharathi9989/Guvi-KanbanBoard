@@ -1,16 +1,92 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🧩 Kanban Board – Professional Task Management App
 
-Currently, two official plugins are available:
+A clean, modern Kanban Board built with **React + Vite**, featuring smooth drag-and-drop, professional UI/UX, and a subtle celebration effect when tasks are completed.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ✅ Create tasks with title & status
+- 🔄 Drag and drop tasks between columns
+- 📌 Columns: Todo, In Progress, Done
+- 🎉 Subtle confetti/glow effect when task moved to **Done**
+- 🎨 Professional, minimal UI (no over-animation)
+- ⚡ Fast build using Vite
+- 📱 Responsive layout
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Frontend:** React (Vite)
+- **Drag & Drop:** `@dnd-kit`
+- **Styling:** Tailwind CSS
+- **Effects:** `canvas-confetti`
+
+---
+
+## 📂 Project Structure
+
+src/
+├── components/
+│   ├── Board.jsx
+│   ├── Column.jsx
+│   ├── TaskCard.jsx
+│   └── TaskForm.jsx
+│   └── TaskModal.jsx
+├── context/
+│   └── TaskContext.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
+
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/kanban-board.git
+
+# Move into project folder
+cd kanban-board
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+🎯 How Drag & Drop Works
+	•	Tasks can be dragged between columns using @dnd-kit
+	•	Drop zones are visually highlighted for clarity
+	•	When a task is dropped into Done:
+	•	A subtle confetti/glow animation appears
+	•	Designed to feel rewarding but professional
+
+⸻
+
+🧠 UX Philosophy
+	•	❌ No flashy or childish animations
+	•	✅ Subtle feedback for completed actions
+	•	✅ Clear visual hierarchy
+	•	✅ Recruiter & real-product ready design
+
+⸻
+
+📌 Future Enhancements
+	•	🔐 Authentication
+	•	☁️ Backend integration (Node.js + MongoDB)
+	•	💾 Persistent task storage
+	•	♿ Keyboard accessible drag & drop
+	•	📊 Analytics for completed tasks
+
+⸻
+
+👨‍💻 Author
+
+Velubharathi
+Aspiring Full Stack Developer
+Focused on building real-world, production-ready applications.
